@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=M+PLUS+Rounded+1c:wght@300&family=Play:wght@400;700&family=Poppins:wght@100&family=Ruda:wght@400;500;600;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/home.css">
     <title>Trang chủ</title>
 </head>
 <body>
@@ -46,5 +47,102 @@
 
         </div>
     </header>
+
+
+    <!-- MENU -->
+    <nav class=" text-center" style="height: 8%;"> 
+        <div class="ctn">
+        <a class="logo" href="">
+            <img src="../IMG/ZT_FS_b.png" alt="">
+        </a>
+            <div class="menu"></div>
+            
+        <div class="ac">
+
+            <form action="" id="findForm" action="timkiem.html" method="get">
+                <input type="text" name="" id="tukhoa" placeholder="Tìm kiểm sản phẩm">
+            </form>
+            <a href="" class="find" onclick="return showFind()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </a>
+            <a href="dangky.html">
+                <i class="fa-solid fa-user"></i>
+            </a>
+            <a href="">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+            <a href="giohang.html">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+
+        </div>
+
+
+
+
+    </div>
+    </nav>
+
+                <!-- SLIDE SHOW -->
+                <section class="slideshow">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+    
+                          <div class="swiper-slide">
+                            <div>
+                                <span>Shop Nam</span>
+                                <p>Lịch lãm - Phong cách</p>
+                                <span>Hãy đến và chọn ngay những trang phục dành riêng cho bạn! <br></span>
+                                <button>Shop Nam</button>
+                            </div>
+                            <img src="https://fabershop.plethorathemes.com/fashion/wp-content/uploads/sites/2/2019/01/HOME-6.jpg" alt="">
+                            
+                          </div>
+                          <div class="swiper-slide">
+                            <div>
+                                <span>Shop Nữ</span>
+                                <p>Xinh đẹp -  Quyến rũ</p>
+                                <span>Hãy đến và chọn ngay những trang phục dành riêng cho bạn! <br></span>
+
+                                <button>Shop Nữ</button>
+                            </div>
+                            <img src="https://fabershop.plethorathemes.com/fashion/wp-content/uploads/sites/2/2019/01/HOME-2.jpg" alt="">
+                            
+                          </div>
+                          <div class="swiper-slide">
+                            <div>
+                                <span>Khác</span>
+                                <p>Đa dạng - Nhiều lựa chọn</p>
+                                <span>Hãy đến và chọn ngay những trang phục dành riêng cho bạn! <br></span>
+
+                                <button>Sản phẩm khác</button>
+                            </div>
+                            <img src="https://fabershop.plethorathemes.com/fashion/wp-content/uploads/sites/2/2019/01/HOME-5.jpg" alt="">
+
+                          </div>
+                        </div>
+                    </div>
+                </section>
+
+    <main>
+
+    </main>
+    <!-- SLIDE SHOW -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: false,
+        effect: 'slide',
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+    });
+</script>
 </body>
 </html>
+
+

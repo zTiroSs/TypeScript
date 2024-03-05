@@ -1,3 +1,8 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 body {
     overflow-x: hidden;
 }
@@ -15,6 +20,7 @@ body {
 }
 /* HEADER */
 header {
+    height: 4%;
     background-color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
@@ -48,4 +54,69 @@ header a{
 .mx i{
     color: rgb(255, 255, 255);
     margin-right: 5px;
+}
+
+
+nav{
+    height: 8%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(194, 194, 194, 0.103);
+}
+nav img{
+    width: 160px;
+}
+.menu{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.menu a{
+    font-size: 20px;
+    font-family: var(--play);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 0px 10px;
+    font-weight: bold;
+}
+nav .ac{ 
+    margin: 0px;
+    height: fit-content;
+    padding: 10px;
+    font-size: 24px;
+    margin-left: auto;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+}
+
+nav .ac form{
+    font-family: var(--play);
+    width: fit-content;
+
+}
+nav form.active input{
+    display: block;
+}
+nav form input{
+    margin-right: 4px;
+    border: 1px solid #d1d1d1; 
+    font-size: 13px;
+    padding: 8px 10px;
+
+}
+nav form input::placeholder{
+    color: rgba(165, 165, 165, 0.637);
+}
+nav .ac .find i{
+    /* display:flex; */
+}
+nav .ac a{
+    margin: 3px 5px;
+    color: white;
+}
+nav .ac i{
+    color: black;
 }

@@ -1,0 +1,72 @@
+.slideshow{
+    width: 100%;
+    height: 88%;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.swiper-wrapper {
+    display: flex; 
+}
+.swiper-slide {
+    width: 100%;
+    height: 100%; 
+    position: relative;
+}
+.swiper-slide div {
+    background-color: rgba(255, 255, 255, 0.295);
+    margin: auto;
+    text-align: left;
+    font-family: var(--play);
+    position: absolute;
+    transform: translate(30%, 60%);
+    padding: 40px 40px;
+}
+.swiper-slide>img{
+    opacity: 0;
+    transition: opacity 0.3s linear;
+}
+.swiper-slide-active img{
+    opacity: 1;
+}
+.swiper-slide div span{
+    font-size: 18px
+}
+.swiper-slide div p{
+    font-weight: bold;
+    font-size: 55px;
+    opacity: 0;
+    transform: translateY(500%);
+    transition: opacity 0.1s linear, transform 0.8s ease;
+}
+.swiper-slide-active div p {
+    opacity: 1;
+    transform: translateY(0%);
+}
+.swiper-slide div button{
+    margin-top: 10px;
+
+    background-color: black;
+    border: 1px solid rgba(255, 255, 255, 0);
+    color: white;
+    font-size: 18px;
+    padding: 8px 20px;
+    transition: 0.3s;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.5s ease, transform 1s ease;
+}
+.swiper-slide-active div button{
+    opacity: 1;
+    transform: translateY(0%);
+}
+.swiper-slide div button:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+.swiper-slide img{
+    height: 100%;
+}
